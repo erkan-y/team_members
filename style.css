@@ -8,6 +8,7 @@ header {
   justify-content: space-around;
   padding: 1rem;
   margin: 1rem;
+  font-size: 1.5rem;
 }
 .who {
   width: 40%;
@@ -38,13 +39,13 @@ body {
 .photo {
   display: flex;
 }
-.column2 {
+.middle {
   display: flex;
   position: relative;
   top: 5rem;
 }
 .container > div {
-  width: 25rem;
+  width: 30%;
   padding: 2rem;
 }
 #role {
@@ -53,31 +54,43 @@ body {
   font-size: 0.6rem;
   font-weight: 600;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 968px) {
   header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
   }
-  .container {
-    flex-direction: column;
+  .container > div {
+    width: 48%;
   }
+
   .who {
     margin: 2rem;
-    font-size: 1.5rem;
+    width: 80%;
   }
   body {
     font-size: 0.5rem;
   }
+  .middle {
+    position: static;
+  }
+  .right {
+    position: relative;
+    top: 5rem;
+  }
 }
-@media screen and (min-width: 600px) and (max-width: 968) {
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
   .container > div {
-    width: 15vw;
+    width: 90%;
+  }
+  .middle,
+  .right {
+    position: static;
   }
 }
-/* @media screen and (min-width: 1000px) {
-  html {
-    font-size: 1.5rem;
-  }
-} */
