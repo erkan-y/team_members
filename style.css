@@ -31,7 +31,7 @@ body {
   width: 95%;
   margin-right: 1rem;
   margin-bottom: 1rem;
-
+  transition: 1s;
   box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(179, 179, 179);
 
   border-radius: 0.5rem;
@@ -44,6 +44,10 @@ body {
   position: relative;
   top: 5rem;
 }
+.middle + p {
+  position: relative;
+  top: 5rem;
+}
 .container > div {
   width: 30%;
   padding: 2rem;
@@ -53,6 +57,9 @@ body {
   writing-mode: vertical-lr;
   font-size: 0.6rem;
   font-weight: 600;
+}
+.container img:hover {
+  transform: scale(105%);
 }
 @media screen and (max-width: 968px) {
   header {
@@ -77,6 +84,13 @@ body {
   .right {
     position: relative;
     top: 5rem;
+  }
+  .right + p {
+    position: relative;
+    top: 5rem;
+  }
+  .middle + p {
+    position: static;
   }
 }
 @media screen and (max-width: 600px) {
