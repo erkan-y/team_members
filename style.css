@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem;
+}
+.who {
+  width: 40%;
+}
+
+.who p {
+  margin-top: 0.5rem;
+}
+body {
+  background-color: azure;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+.container img {
+  border: 1px solid rgb(204, 204, 204);
+  width: 95%;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(179, 179, 179);
+
+  border-radius: 0.5rem;
+}
+.photo {
+  display: flex;
+}
+.column2 {
+  display: flex;
+  position: relative;
+  top: 5rem;
+}
+.container > div {
+  width: 25rem;
+  padding: 2rem;
+}
+#role {
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .who {
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 968) {
+  .container > div {
+    width: 15vw;
+  }
+}
+/* @media screen and (min-width: 1000px) {
+  html {
+    font-size: 1.5rem;
+  }
+} */
