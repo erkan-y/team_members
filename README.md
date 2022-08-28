@@ -30,7 +30,7 @@ Your company is updating its website. They ask you to make your development team
 
 <p align="center">
 <a href="https://erkan-y.github.io/team_members/"><img src="team.png" alt="screenshot" width="720" height="620"></a>
-  <a href="https://erkan-y.github.io/team_members/"><img src="team2.png" alt="screenshot" width="720" height="620"></a>
+  <a href="https://erkan-y.github.io/team_members/"><img src="team2.png" alt="screenshot" width="590" height="620"></a>
 </p>
 
 
